@@ -1,3 +1,7 @@
+if (!globalThis.crypto) {
+  globalThis.crypto = require("node:crypto")
+}
+
 const { hash } = require("@jrc03c/js-crypto-helpers")
 
 module.exports = async (request, response) => {
