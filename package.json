@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@jrc03c/js-crypto-helpers": "^0.0.9",
+    "@jrc03c/js-math-tools": "^0.0.59",
+    "@jrc03c/js-text-tools": "^0.0.24"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
+  }
+}
