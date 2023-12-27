@@ -6,8 +6,8 @@ const { hash } = require("@jrc03c/js-crypto-helpers")
 
 module.exports = async (request, response) => {
   try {
-    return response.send(await hash(request.body))
+    return response.send({ hashed: await hash(request.body.text) })
   } catch (e) {
-    return response.status(500).send({ message: e.toString() })
+    return response.status(500).send({ error: e.toString() })
   }
 }
